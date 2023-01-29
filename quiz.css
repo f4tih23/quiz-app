@@ -1,0 +1,149 @@
+.btn_start,
+.quiz_box,.score-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.quiz_box.active {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.quiz_box {
+    width: 550px
+    transform: translate(-50%, -50%) scale(0.7);
+    transition: all 0.3s ease;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.quiz_box header .title {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.quiz_box .question_text {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.quiz_box .option_list {
+    padding: 18px 0;
+}
+
+.quiz_box .option_list .option {
+    border: 1px solid #151D3B;
+    border-radius: 5px;
+    padding: 8px 15px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.quiz_box .option_list .option:hover {
+    color: #112B2C;
+    background: #FFD33D;
+}
+
+.quiz_box .option_list .option.correct {
+    color: #155724;
+    background: #d4edda;
+}
+
+.quiz_box .option_list .option.incorrect {
+    color: #721c24;
+    background: #f8d7da;
+}
+
+.disabled{
+    pointer-events: none;
+}
+
+.next-btn{
+    pointer-events: none;
+    opacity: 0;
+    transform: scale(0.9);
+    transition: all 0.5s ease;
+}
+
+.next-btn-show{
+        pointer-events: auto;
+        opacity: 1;
+    
+}
+
+.card-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.score-box.active {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.score-box {
+   justify-content: center;
+   text-align: center;
+   align-items: center;
+   padding: 30px;
+    transform: translate(-50%, -50%) scale(0.7);
+    transition: all 0.3s ease;
+    opacity: 0;
+    pointer-events: none;
+}
+.score-box .icon{
+    font-size: 80px;
+    color: #007bff;
+    margin: 10px;
+}
+.score-text{
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 500;
+
+}
+
+/* timer */
+.timer{
+    padding: 3px;
+    text-align: center;
+   
+    border-radius: 3px;
+    align-items: center;
+}
+.timer-text{
+    text-align: center;
+    justify-content: center;
+    font-size: 14px;
+}
+.time-second{
+    border-radius: 3px;
+    width: 40px;
+    align-items: center;
+    background-color: orange;
+    text-align: center;
+    padding: 3px;
+    font-size: 16px;
+    font-weight: 500;
+
+}
+.time-line{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 4px;
+    background-color: orange;
+
+}
+.card-header{
+    position: relative;
+}
